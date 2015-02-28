@@ -931,7 +931,11 @@ public class ExtensionLoader<T> {
                     if (i > 0) {
                         codeBuidler.append(", ");
                     }
+<<<<<<< HEAD
                     codeBuidler.append(pts[i].getCanonicalName());
+=======
+                    codeBuidler.append(ets[i].getCanonicalName());
+>>>>>>> refs/remotes/alibaba/master
                 }
             }
             codeBuidler.append(" {");
