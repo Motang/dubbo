@@ -82,7 +82,7 @@ public class RestProtocol extends AbstractProxyProtocol {
 
     protected <T> Runnable doExport(T impl, Class<T> type, URL url) throws RpcException {
         String addr = url.getIp() + ":" + url.getPort();
-        Class<?> implClass = ServiceClassHolder.getInstance().popServiceClass();
+        Class implClass = ServiceClassHolder.getInstance().popServiceClass();
         RestServer server = servers.get(addr);
         if (server == null) {
             server = serverFactory.createServer(url.getParameter(Constants.SERVER_KEY, "jetty"));
@@ -111,7 +111,7 @@ public class RestProtocol extends AbstractProxyProtocol {
             }
         }
 
-        final Class<?> resourceDef = GetRestful.getRootResourceClass(implClass) != null ? implClass : type;
+        final Class resourceDef = GetRestful.getRootResourceClass(implClass) != null ? implClass : type;
 
         server.deploy(resourceDef, impl, contextPath);
 

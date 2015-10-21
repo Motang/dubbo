@@ -38,7 +38,7 @@ public abstract class BaseRestServer implements RestServer {
         doStart(url);
     }
 
-    public void deploy(Class<?> resourceDef, Object resourceInstance, String contextPath) {
+    public void deploy(Class resourceDef, Object resourceInstance, String contextPath) {
         if (StringUtils.isEmpty(contextPath)) {
             getDeployment().getRegistry().addResourceFactory(new DubboResourceFactory(resourceInstance, resourceDef));
         } else {
@@ -46,7 +46,7 @@ public abstract class BaseRestServer implements RestServer {
         }
     }
 
-    public void undeploy(Class<?> resourceDef) {
+    public void undeploy(Class resourceDef) {
         getDeployment().getRegistry().removeRegistrations(resourceDef);
     }
 

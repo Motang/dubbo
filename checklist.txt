@@ -6,13 +6,26 @@ jar版本都发布在http://10.118.46.12:8081/nexus/content/groups/public/com/al
 <artifactId>dubbo</artifactId>
 <version>sf.1.0.0</version>
 
-下面是版本升级和修改记录
+## 版本升级和修改记录
+
 **********dubbo-sf-1.0.0**********
-1. 升级到1.6编译
-2. 将Spring2.5.6升级至Spring3.2.8版本
+
+* 1. 升级到1.6编译
+* 2. 将Spring2.5.6升级至Spring3.2.8版本
 升级版本日期是2014-11-05，唐继模（709166）
 
 **********dubbo-sf-1.0.1**********
-修复创建AdaptiveExtensionClass时方法异常签名问题
 
-**********dubbo-sf-1.0.2**********
+* 修复创建AdaptiveExtensionClass时方法异常签名问题
+
+**********dubbo-sf-2.0.0**********
+
+* 合并**dubbox.2.8.4**版本, dubbox文档地址 http://dangdangdotcom.github.io/dubbox
+* 支持REST远程调用
+* 支持基于Kryo和FST的Java高效序列化实现
+* 支持基于Jackson的JSON序列化
+* 支持基于嵌入式Tomcat的HTTP remoting体系
+* 升级ZooKeeper客户端
+* 支持完全基于Java代码的Dubbo配置
+* 调整Demo应用
+* 修正了dubbo的bug

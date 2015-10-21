@@ -89,12 +89,12 @@ public class RpcContext {
     private final Map<String, String> attachments = new HashMap<String, String>();
 
     private final Map<String, Object> values = new HashMap<String, Object>();
-    
+
     // now we don't use the 'values' map to hold these objects
     // we want these objects to be as generic as possible
     private Object request;
     private Object response;
-    
+
 	@Deprecated
     private List<Invoker<?>> invokers;
     
@@ -106,8 +106,8 @@ public class RpcContext {
     
 	protected RpcContext() {
 	}
-	
-	/**
+
+    /**
      * Get the request object of the underlying RPC protocol, e.g. HttpServletRequest
      *
      * @return null if the underlying protocol doesn't provide support for getting request

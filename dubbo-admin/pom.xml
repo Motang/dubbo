@@ -19,7 +19,7 @@
 	<parent>
 		<groupId>com.alibaba</groupId>
 		<artifactId>dubbo-parent</artifactId>
-		<version>sf.1.0.2-SNAPSHOT</version>
+		<version>sf.2.0.0</version>
 	</parent>
 	<artifactId>dubbo-admin</artifactId>
 	<packaging>war</packaging>
@@ -46,7 +46,7 @@
 			<artifactId>javassist</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.jboss.netty</groupId>
+			<groupId>io.netty</groupId>
 			<artifactId>netty</artifactId>
 		</dependency>
 		<dependency>
@@ -82,7 +82,7 @@
 			<artifactId>zkclient</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.netflix.curator</groupId>
+			<groupId>org.apache.curator</groupId>
 			<artifactId>curator-framework</artifactId>
 		</dependency>
 		<dependency>
@@ -99,7 +99,7 @@
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
+			<artifactId>javax.servlet-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
